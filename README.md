@@ -1,6 +1,6 @@
 # Geo3x3
 
-TODO: Write a gem description
+geo zone encoding
 
 ## Installation
 
@@ -18,7 +18,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'geo3x3'
+
+code = Geo3x3.encode({
+  lat: 36.208823,
+  lng: 138.251953,
+  level: 5
+}) # => "E3793" 
+
+Geo3x3.decode(code)
+```
 
 ## Contributing
 
