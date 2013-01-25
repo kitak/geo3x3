@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Geo3x3::VERSION
   gem.authors       = ["Keisuke KITA"]
   gem.email         = ["kei.kita2501@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{geo zone encoding}
+  gem.summary       = %q{geo zone encoding}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
