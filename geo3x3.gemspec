@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kei.kita2501@gmail.com"]
   gem.description   = %q{geo zone encoding}
   gem.summary       = %q{geo zone encoding}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/kitak/geo3x3"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
