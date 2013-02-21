@@ -30,6 +30,13 @@ code = Geo3x3.encode({
 Geo3x3.decode(code)
 ```
 
+## Origin
+[https://github.com/taisukef/Geo3x3](https://github.com/taisukef/Geo3x3)
+
+## Licence
+CC BY 3.0
+[http://creativecommons.org/licenses/by/3.0/](http://creativecommons.org/licenses/by/3.0/)
+
 ## Contributing
 
 1. Fork it
