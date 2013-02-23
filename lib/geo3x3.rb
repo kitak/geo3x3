@@ -31,10 +31,18 @@ end
 
 module Geo3x3
 
-  def self.encode(params)
-    lat = params[:lat].to_f
-    lng = params[:lng].to_f
-    level = params[:level]
+  def self.encode(*params)
+    if params.size == 3 && params.all? {|i| i.kind_of? Numeric}
+      lat, lng, level = *params
+      lat = lat.to_f
+      lng = lng.to_f
+    elsif params[0].kind_of? Hash
+      lat = params[0][:lat].to_f
+      lng = params[0][:lng].to_f
+      level = params[0][:level]
+    else
+      raise ArgumentError
+    end
     raise ArgumentError if level < 1
 
     code = 

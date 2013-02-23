@@ -42,7 +42,10 @@ class TestGeo3x3 < MiniTest::Unit::TestCase
         Geo3x3.encode(lat: params[0], lng: params[1], level: 0)
       end
       (1..9).each do |l|
+        # hash interface
         assert_equal accepts[i][l - 1], Geo3x3.encode(lat: params[0], lng: params[1], level: l)
+        # array interface
+        assert_equal accepts[i][l - 1], Geo3x3.encode(params[0], params[1], l)
       end
     end
   end
