@@ -21,12 +21,17 @@ Or install it yourself as:
 ```ruby
 require 'geo3x3'
 
+# encode (Hash interface)
 code = Geo3x3.encode({
   lat: 36.208823,
   lng: 138.251953,
   level: 5
 }) # => "E3793" 
 
+# encode (Array interface)
+code = Geo3x3.encode(36.208823, 138.251953, 5) # => "E3793" 
+
+# decode
 Geo3x3.decode(code)
 ```
 
